@@ -22,7 +22,7 @@ resource "aws_elastic_beanstalk_environment" "docker-env" {
   }
 }
 
-resource "aws_elastic_beanstalk_environment" "docker-env" {
+resource "aws_elastic_beanstalk_environment" "docker-green-env" {
   name                = "sprintboardapp-green-env"
   application         = aws_elastic_beanstalk_application.docker-app.name
   solution_stack_name = "64bit Amazon Linux 2 v3.6.0 running Docker"
